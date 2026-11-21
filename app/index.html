@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Legend — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="masthead">
+  <div class="mast-text">
+    <p class="kicker">Grand Theft Auto VI · PlayStation 5 · Fifth Edition</p>
+    <h1>Leonida Legend</h1>
+    <p class="sub">The trophy guide &amp; tracker for all 55 official trophies — every guide cited, every missable flagged, one road to the platinum.</p>
+  </div>
+  <div class="mast-score" aria-label="progress summary">
+    <p class="big-count"><span id="earned-count">0</span><span class="of"> / 55</span></p>
+    <p class="big-label">trophies earned</p>
+    <p class="eta-line">Platinum ETA <strong id="eta-hours">≈138h</strong> · <span id="eta-left">138h to go</span></p>
+    <div class="grade-line" id="grade-line"></div>
+  </div>
+</header>
+
+<section id="audit-strip" aria-label="guide audit">
+  <div class="audit-cell"><strong id="audit-steps">0</strong><span>cited steps</span></div>
+  <div class="audit-cell"><strong id="audit-sources">0</strong><span>named sources</span></div>
+  <div class="audit-cell"><strong id="audit-disputes">0</strong><span>disputes resolved</span></div>
+  <div class="audit-cell"><strong id="audit-missables">0</strong><span>missables flagged</span></div>
+  <div class="audit-cell"><strong id="audit-hidden">0</strong><span>hidden trophies</span></div>
+  <div class="audit-note">Every step in every guide carries its source as [S#]. The judge's rule is ours too: no credit for an uncited specific.</div>
+</section>
+
+<nav id="view-tabs" aria-label="views">
+  <button type="button" data-view="checklist" class="tab active">Checklist</button>
+  <button type="button" data-view="roadmap" class="tab">Roadmap</button>
+  <button type="button" data-view="missables" class="tab">Missables</button>
+  <button type="button" data-view="nextup" class="tab">Next Up</button>
+  <button type="button" data-view="sources" class="tab">Sources</button>
+  <button type="button" data-view="disputes" class="tab">Disputes</button>
+</nav>
+
+<section id="toolbar" aria-label="tracker controls">
+  <label class="search-box">Search
+    <input id="search" type="search" placeholder="trophy, mission, place…  ( / )" autocomplete="off">
+  </label>
+  <div id="kind-chips" role="group" aria-label="filter by kind">
+    <button type="button" data-kind="all" class="chip active">All kinds</button>
+    <button type="button" data-kind="story" class="chip">Story</button>
+    <button type="button" data-kind="missable" class="chip">Missable</button>
+    <button type="button" data-kind="collectibles" class="chip">Collectibles</button>
+    <button type="button" data-kind="activities" class="chip">Activities</button>
+    <button type="button" data-kind="partner" class="chip">Partner</button>
+  </div>
+  <label>Grade
+    <select id="grade-filter">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label>Sort
+    <select id="sort-order">
+      <option value="roadmap">Roadmap order</option>
+      <option value="name">Name A–Z</option>
+      <option value="grade">Grade</option>
+      <option value="difficulty">Difficulty</option>
+      <option value="hours">Hours</option>
+    </select>
+  </label>
+  <label class="toggle"><input id="spoiler-toggle" type="checkbox"> Spoiler shield
+    <span class="hint">hide story trophies until earned</span></label>
+  <label class="toggle"><input id="hidden-toggle" type="checkbox" checked> Show hidden
+    <span class="hint">28 sit hidden on PSN</span></label>
+  <label class="toggle"><input id="earned-toggle" type="checkbox"> Hide earned</label>
+  <div class="io-buttons">
+    <button id="export-progress" type="button">Export progress</button>
+    <label class="import-label">Import progress <input id="import-progress" type="file" accept="application/json"></label>
+    <button id="reset-progress" type="button">Reset</button>
+  </div>
+</section>
+
+<main id="view-root">
+  <section id="view-checklist" class="view">
+    <div id="checklist-wrap">
+      <div id="trophy-list" role="list"></div>
+      <aside id="detail-pane" aria-label="trophy guide">
+        <div id="detail-empty">
+          <h2>Pick a trophy</h2>
+          <p>Its full guide opens here — every step cited to a named source, missables with their point of no return, and a counter for the trophies PlayStation tracks by number.</p>
+          <p class="detail-tip">Tip: press <kbd>/</kbd> to search, click any row to open its guide, tick the box to save progress in this browser.</p>
+        </div>
+        <article id="detail-body" hidden></article>
+      </aside>
+    </div>
+  </section>
+  <section id="view-roadmap" class="view" hidden></section>
+  <section id="view-missables" class="view" hidden></section>
+  <section id="view-nextup" class="view" hidden></section>
+  <section id="view-sources" class="view" hidden></section>
+  <section id="view-disputes" class="view" hidden></section>
+</main>
+
+<footer id="colophon">
+  <p>Leonida Legend (Fifth Edition). Trophy names, descriptions and grades are the official PlayStation 5 list as published [S1][S2][S3]; every guide is this entry's own words and cites its sources. Works fully offline; progress never leaves this browser.</p>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
